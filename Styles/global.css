@@ -1,0 +1,7 @@
+#navbar-navElm{
+    background-color: #f7ffd9 !important;
+/*    https://stackoverflow.com/questions/43542922/how-to-avoid-bootstrap-css-overriding-the-custom-css*/
+}
+#header-headerElm{
+    background-color: #E8F2BE!important;
+}
