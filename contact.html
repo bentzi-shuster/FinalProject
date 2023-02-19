@@ -12,8 +12,8 @@
   <title>Contact Us</title>
   <!--  bootstraps css code  -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-  <link rel="stylesheet" href="Styles/index.css">
   <link rel="stylesheet" href="Styles/global.css">
+  <link rel="stylesheet" href="Styles/contact.css">
 </head>
 <body style="filter: blur(.95px)">
 <header id="header-headerElm">
@@ -63,6 +63,33 @@
 
 <main>
 
+  <form id="contactForm" class="d-flex flex-column justify-content-center align-items-center container card bg-success my-xl-5 bg-opacity-25">
+<!--    https://getbootstrap.com/docs/5.3/forms/floating-labels/-->
+    <h3 class="text-center mt-5">Contact Us</h3>
+    <div class="d-flex flex-column align-items-end w-50">
+      <div class="form-floating my-3 w-100">
+        <input type="text" class="form-control" id="name" placeholder="Joe Doe">
+        <label for="name">Name</label>
+      </div>
+      <div class="form-floating my-3 w-100">
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
+        <label for="email">Email address</label>
+      </div>
+      <div class="form-floating my-3 w-100">
+        <input type="tel" class="form-control" id="phone" placeholder="1+123-456-7890">
+        <label for="phone">Phone Number</label>
+      </div>
+      <div class="form-floating my-3 w-100" >
+        <textarea style="height: 150px" class="form-control" placeholder="Leave a comment here" id="comment"></textarea>
+        <label for="comment">Comments</label>
+      </div>
+      <button class="btn btn-outline-secondary mt-4 ml-auto mb-5">Submit</button>
+    </div>
+
+
+
+
+  </form>
 </main>
 
 <!--https://getbootstrap.com/docs/5.3/examples/footers/-->
