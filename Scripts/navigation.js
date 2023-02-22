@@ -11,6 +11,7 @@ for( let i=0; i<navlinks.length;i++){
         navlink.setAttribute("aria-current","page");
         const frame = document.getElementById("content");
         frame.src=navlink.href;
+        frame.addEventListener("load",()=>{document.title=frame.contentDocument.title})
     })
 }
 const logo=document.getElementsByClassName("logo-link")[0];
@@ -24,4 +25,6 @@ logo.addEventListener("click",(e)=> {
     home_navlink.setAttribute("aria-current", "page");
     const frame = document.getElementById("content");
     frame.src = home_navlink.href;
+    frame.addEventListener("load",()=>{document.title=frame.contentDocument.title})
+
 })
