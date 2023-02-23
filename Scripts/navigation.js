@@ -1,7 +1,7 @@
 const navlinks = document.getElementsByClassName("nav-link");
 for( let i=0; i<navlinks.length;i++){
     const navlink= navlinks[i];
-    navlink.addEventListener("click",(e)=>{
+    navlink.addEventListener("pointerdown",(e)=>{
         e.preventDefault();
         if(navlink.classList.contains("active")===true) return;
         const curPage = document.querySelector(".nav-link.active");
@@ -12,10 +12,19 @@ for( let i=0; i<navlinks.length;i++){
         const frame = document.getElementById("content");
         frame.src=navlink.href;
         frame.addEventListener("load",()=>{document.title=frame.contentDocument.title})
-    })
+    });
+    navlink.addEventListener("pointerup",(e)=>{
+        e.preventDefault();
+    });
+    navlink.addEventListener("click",(e)=>{
+        e.preventDefault();
+    });
+    navlink.addEventListener("auxclick",(e)=>{
+        e.preventDefault();
+    });
 }
 const logo=document.getElementsByClassName("logo-link")[0];
-logo.addEventListener("click",(e)=> {
+logo.addEventListener("pointerdown",(e)=> {
     e.preventDefault();
     const home_navlink = document.querySelector('a.nav-link[href="home.html"]');
     const curPage = document.querySelector(".nav-link.active");
@@ -25,6 +34,15 @@ logo.addEventListener("click",(e)=> {
     home_navlink.setAttribute("aria-current", "page");
     const frame = document.getElementById("content");
     frame.src = home_navlink.href;
-    frame.addEventListener("load",()=>{document.title=frame.contentDocument.title})
+    frame.addEventListener("load",()=>{document.title=frame.contentDocument.title});
 
-})
+});
+logo.addEventListener("pointerup",(e)=>{
+    e.preventDefault();
+});
+logo.addEventListener("click",(e)=>{
+    e.preventDefault();
+});
+logo.addEventListener("auxclick",(e)=>{
+    e.preventDefault();
+});
