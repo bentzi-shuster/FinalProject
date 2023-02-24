@@ -20,3 +20,15 @@ body{
     filter: blur(1.05px);
 }
 /*https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears*/
+a.logo-link:hover{
+    animation: spin .75s infinite ease-in-out;
+}
+@keyframes spin {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+
+}
