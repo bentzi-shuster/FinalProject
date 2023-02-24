@@ -1,5 +1,5 @@
-let appendElm = document.createElement("div")
-appendElm.innerHTML=`
+let headerWrap = document.createElement("div")
+headerWrap.innerHTML=`
 <header id="header-headerElm">
     <div class="d-flex flex-row ">
         <a class="my-auto mx-4 logo-link"  href="home.html">
@@ -44,4 +44,4 @@ appendElm.innerHTML=`
 
 </header>
 `
-document.body.appendChild(appendElm);
+document.body.appendChild(headerWrap);
