@@ -3,8 +3,14 @@
 #carouselAutoplaying {
     width: 50%;
 }
+.card{
+    min-width: 300px;
+}
 @media only screen and (orientation:portrait ) {
     #carouselAutoplaying {
     width: 90% !important;
+    }
+    .card{
+        min-width: 90vw;
     }
 }
