@@ -2,7 +2,7 @@ let headerWrap = document.createElement("div")
 headerWrap.innerHTML=`
 <header id="header-headerElm">
     <div class="d-flex flex-row ">
-        <a class="my-auto mx-4 logo-link"  href="home.html">
+        <a class="my-auto mx-4 logo-link"  href="index.html">
             <img src="Images/logo.png"  width="50" height="50" alt="logo of alcohol bottle and wine glass">
         </a>
         <span class="h4 fw-bolder p-3 d-block"> Tipsy Testing </span>
@@ -17,7 +17,7 @@ headerWrap.innerHTML=`
             <ul class="navbar-nav w-100 d-flex justify-content-evenly">
 
                 <li class="fw-bold nav-item">
-                    <a class="nav-link ${window.location.pathname.includes("home.html")?"active":""}" ${window.location.pathname.includes("home.html")?"aria-current=\"page\"":""} href="home.html">Home</a>
+                    <a class="nav-link ${window.location.pathname.includes("index.html")?"active":""}" ${window.location.pathname.includes("index.html")?"aria-current=\"page\"":""} href="index.html">Home</a>
                 </li>
 
 
