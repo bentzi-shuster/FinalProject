@@ -18,6 +18,7 @@ headerWrap.innerHTML=`
 
                 <li class="fw-bold nav-item">
                     <a class="nav-link ${window.location.pathname.includes("index.html")?"active":""}" ${window.location.pathname.includes("index.html")?"aria-current=\"page\"":""} href="index.html">Home</a>
+<!--             ternary opperator to check which page it is so it can make that link active and give it the aria tag for accessibility-->
                 </li>
 
 

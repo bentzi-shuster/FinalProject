@@ -6,6 +6,7 @@ mobileAndTabletCheck = function() {
 };
 
 if(mobileAndTabletCheck()){
+    //since the object tag is not supported on mobile browsers, change the links to open the pdf in a new tab
     document.querySelector("footer ul li:nth-child(1) a").href="Documents/tos.pdf"
     document.querySelector("footer ul li:nth-child(1) a").target="_blank"
     document.querySelector("footer ul li:nth-child(3) a").href="Documents/PrivacyPolicy.pdf"
