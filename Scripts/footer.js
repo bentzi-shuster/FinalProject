@@ -1,4 +1,6 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 let footerWrap= document.createElement("div")
+footerWrap.classList.add("footer")
 footerWrap.innerHTML=`
 <!--https://getbootstrap.com/docs/5.3/examples/footers/-->
 <div class="container">

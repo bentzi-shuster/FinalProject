@@ -1,3 +1,4 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 #navbar-navElm{
     background-color: #f7ffd9 !important;
     z-index: 1000!important;
@@ -18,7 +19,9 @@ body,html {
     padding: 0;
 }
 body{
-    filter: blur(1.05px);
+/*    🍺     */
+    filter: blur(1.15px);
+/*    🍺     */
 }
 /*https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears*/
 a.logo-link:hover{
@@ -32,4 +35,7 @@ a.logo-link:hover{
         transform: rotateY(360deg);
     }
 
+}
+main{
+    min-height: 60vh;
 }

@@ -1,3 +1,4 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 let headerWrap = document.createElement("div")
 headerWrap.innerHTML=`
 <header id="header-headerElm">

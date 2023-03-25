@@ -1,3 +1,4 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 // https://stackoverflow.com/questions/11381673/detecting-a-mobile-browser
 mobileAndTabletCheck = function() {
     let check = false;
