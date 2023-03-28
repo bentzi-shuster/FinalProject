@@ -39,3 +39,10 @@ a.logo-link:hover{
 main{
     min-height: 60vh;
 }
+.footer{
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
+/*    the gradient shows there is stuff below to scroll to*/
+/*    I used https://cssgradient.io/ */
+}

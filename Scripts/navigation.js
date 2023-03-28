@@ -22,22 +22,24 @@ headerWrap.innerHTML=`
 <!--             ternary opperator to check which page it is so it can make that link active and give it the aria tag for accessibility-->
                 </li>
 
-
                 <li class="fw-bold nav-item">
                     <a class="nav-link ${window.location.pathname.includes("contact.html")?"active":""}" ${window.location.pathname.includes("contact.html")?"aria-current=\"page\"":""} href="contact.html">Contact Us</a>
                 </li>
-                <li class="fw-bold nav-item">
-                    <a class="nav-link ${window.location.pathname.includes("tips.html")?"active":""}" ${window.location.pathname.includes("tips.html")?"aria-current=\"page\"":""} href="tips.html">Study Tips</a>
-                </li>
+                
                 <li class="fw-bold nav-item">
                     <a class="nav-link ${window.location.pathname.includes("smuggling.html")?"active":""}" ${window.location.pathname.includes("smuggling.html")?"aria-current=\"page\"":""} href="smuggling.html">Smuggling 101</a>
                 </li>
-                <li class="fw-bold nav-item">
-                    <a class="nav-link ${window.location.pathname.includes("alternatives.html")?"active":""}" ${window.location.pathname.includes("alternatives.html")?"aria-current=\"page\"":""} href="alternatives.html">Alternatives for under 21</a>
-                </li>
+          
                 <li class="fw-bold nav-item">
                     <a class="nav-link ${window.location.pathname.includes("testimonies.html")?"active":""}" ${window.location.pathname.includes("testimonies.html")?"aria-current=\"page\"":""} href="testimonies.html">Testimonies</a>
                 </li>
+                 <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle fw-bold ${(window.location.pathname.includes("tips.html")||(window.location.pathname.includes("alternatives.html")))?"active":""}" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Resources</a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="tips.html">Study Tips</a></li>
+      <li><a class="dropdown-item" href="alternatives.html">Alternatives for under 21</a></li>
+    </ul>
+  </li>
             </ul>
         </div>
     </div>
