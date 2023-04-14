@@ -21,6 +21,7 @@ body,html {
 body{
 /*    🍺     */
     filter: blur(1.15px);
+    cursor: url('../Images/beer.cur'), auto!important;
 /*    🍺     */
 }
 /*https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears*/
@@ -49,3 +50,8 @@ main{
 
 
 
+body:active{
+    /*if you click and hold the page get mad*/
+    transition: 100s!important;
+    background: red!important;
+}

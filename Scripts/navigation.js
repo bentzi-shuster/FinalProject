@@ -37,7 +37,7 @@ headerWrap.innerHTML=`
     <a class="nav-link dropdown-toggle fw-bold ${(window.location.pathname.includes("tips.html")||(window.location.pathname.includes("alternatives.html")))?"active":""}" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Resources</a>
     <ul class="dropdown-menu">
       <li><a class="dropdown-item" href="tips.html">Study Tips</a></li>
-      <li><a class="dropdown-item" href="alternatives.html">Alternatives for under 21</a></li>
+      <li><a class="dropdown-item" onclick="Batman()" href="#">Alternatives for under 21</a></li>
     </ul>
   </li>
             </ul>
@@ -49,3 +49,12 @@ headerWrap.innerHTML=`
 </header>
 `
 document.body.appendChild(headerWrap);
+function Batman(){
+    //nananannananananananananannaannanananana BATMAN!
+    let audio = new Audio('Audio/Batman.mp3');
+    audio.play();
+    audio.addEventListener("ended",(e)=>{
+        window.location.href="alternatives.html"
+        //when the batman sound is done, open the page
+    })
+}

@@ -7,6 +7,9 @@
 .card{
     min-width: 300px;
 }
+.card:hover, .card:focus{
+    animation: 1s infinite cardAnimate linear;
+}
 @media only screen and (orientation:portrait ) {
     #carouselAutoplaying {
     width: 90% !important;
@@ -16,7 +19,27 @@
     }
 }
 
+@keyframes cardAnimate {
+0%{
+    transform: rotateZ(0deg);
+}
 
+20%{
+    transform: rotate(-10deg);
+}
+    40%{
+        transform: rotate(10deg);
+    }
+    60%{
+        transform: rotate(-10deg);
+    }
+80%{
+    transform: rotate(10deg);
+}
+    100%{
+        transform: rotate(0deg);
+    }
+}
 /* START OF PAGE ANIMATION CODE */
 body{
 
