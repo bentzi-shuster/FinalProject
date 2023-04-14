@@ -15,3 +15,15 @@
         min-width: 300px;
     }
 }
+
+
+/* START OF PAGE ANIMATION CODE */
+body{
+
+   transform: rotateY(91deg);
+
+}
+body.loaded{
+    transform: rotateY(0deg) !important;
+}
+/* END oF PAGE ANIMATION CODE */

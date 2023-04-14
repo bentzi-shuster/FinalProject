@@ -13,3 +13,15 @@
 
 
 }
+
+
+/* START OF PAGE ANIMATION CODE */
+body{
+
+    transform: translateY(100%);
+
+}
+body.loaded{
+    transform: translateY(0) !important;
+}
+/* END oF PAGE ANIMATION CODE */

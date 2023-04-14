@@ -1,12 +1,9 @@
 /* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
-
 /* START OF PAGE ANIMATION CODE */
 body{
-
-    transform: translateX(-100%);
-
+    transform: scale(0)rotate(-360deg);
 }
 body.loaded{
-    transform: translateX(0%)!important;
+    transform: scale(1)rotate(360deg)!important;
 }
 /* END oF PAGE ANIMATION CODE */

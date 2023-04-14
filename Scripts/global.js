@@ -13,3 +13,13 @@ if(mobileAndTabletCheck()){
     document.querySelector("footer ul li:nth-child(3) a").href="Documents/PrivacyPolicy.pdf"
     document.querySelector("footer ul li:nth-child(3) a").target="_blank"
 }
+
+
+//PAGE ANIMATION CODE
+window.addEventListener("DOMContentLoaded",(e)=> {
+    setTimeout(() => {
+        document.body.className += "loaded";
+        document.body.style.transition="1.5s"
+    }, 10)
+})
+

@@ -17,3 +17,15 @@
      }
 
 }
+
+
+/* START OF PAGE ANIMATION CODE */
+body{
+
+  transform: skew(90deg, 0deg);
+
+}
+body.loaded{
+    transform: skew(0deg, 0deg)!important;
+}
+/* END oF PAGE ANIMATION CODE */
