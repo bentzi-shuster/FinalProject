@@ -8,3 +8,41 @@ body.loaded{
     transform: translateX(0%);
 }
 /* END oF PAGE ANIMATION CODE */
+
+.squirrel{
+    position: sticky;
+    bottom: 8rem;
+    width: 70px;
+    animation: drunkWalk  70s linear infinite, wobble 3s linear infinite;
+}
+@keyframes drunkWalk {
+    0%{
+        left: 0;
+        transform: rotateY(180deg);
+    }
+    49.9%{
+        transform: rotateY(180deg);
+    }
+50%{
+    transform: rotateY(0deg);
+    left: calc(100% - 70px)
+}
+    99.9%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(180deg);
+        left: 0;
+    }
+}
+@keyframes wobble {
+    0%{
+        rotate: -10deg;
+    }
+    50%{
+        rotate: 10deg;
+    }
+    100%{
+        rotate: -10deg;
+    }
+}
