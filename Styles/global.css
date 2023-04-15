@@ -69,5 +69,7 @@ body:active{
     background: red!important;
 }
 
-
+body.batmanclose{
+    transform: scale(0.005) rotate(-.5turn)!important;
+}
 

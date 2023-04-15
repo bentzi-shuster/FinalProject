@@ -2,11 +2,9 @@
 
 /* START OF PAGE ANIMATION CODE */
 body{
-
     transform: translateX(-100%);
-
 }
 body.loaded{
-    transform: translateX(0%)!important;
+    transform: translateX(0%);
 }
 /* END oF PAGE ANIMATION CODE */

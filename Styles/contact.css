@@ -18,19 +18,18 @@
 
 }
 
-
+.modal-backdrop{
+    height: 100%;
+}
 /* START OF PAGE ANIMATION CODE */
 body{
 
   transform: skew(90deg, 0deg);
 
 }
-.modal-backdrop{
-    height: 100%;
-}
 
 body.loaded{
-    transform: skew(0deg, 0deg)!important;
+    transform: skew(0deg, 0deg);
 }
 /* END oF PAGE ANIMATION CODE */
 

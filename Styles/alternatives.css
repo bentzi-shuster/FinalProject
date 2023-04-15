@@ -4,6 +4,6 @@ body{
     transform: scale(0)rotate(-360deg);
 }
 body.loaded{
-    transform: scale(1)rotate(360deg)!important;
+    transform: scale(1)rotate(360deg);
 }
 /* END oF PAGE ANIMATION CODE */

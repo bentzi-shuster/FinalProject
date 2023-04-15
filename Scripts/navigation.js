@@ -53,6 +53,8 @@ function Batman(){
     //nananannananananananananannaannanananana BATMAN!
     let audio = new Audio('Audio/Batman.mp3');
     audio.play();
+    document.body.classList.add("batmanclose")
+    document.body.classList.remove("loaded")
     audio.addEventListener("ended",(e)=>{
         window.location.href="alternatives.html"
         //when the batman sound is done, open the page

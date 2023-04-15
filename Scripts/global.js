@@ -19,7 +19,7 @@ if(mobileAndTabletCheck()){
 window.addEventListener("DOMContentLoaded",(e)=> {
     setTimeout(() => {
         document.body.className += "loaded";
-        document.body.style.transition="1.5s"
+        document.body.style.transition="1s"
     }, 10)
 })
 
