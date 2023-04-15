@@ -1,0 +1,12 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+/* START OF PAGE ANIMATION CODE */
+body {
+filter: invert(1);
+    background-color: black;
+}
+
+body.loaded{
+    filter:invert(0) blur(1.15px);
+    background-color: white;
+}
+/* END oF PAGE ANIMATION CODE */

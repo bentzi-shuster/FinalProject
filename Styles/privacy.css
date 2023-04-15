@@ -1,0 +1,11 @@
+
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+/* START OF PAGE ANIMATION CODE */
+body {
+    clip-path: circle(0%);
+}
+
+body.loaded{
+    clip-path: circle(80%);
+}
+/* END oF PAGE ANIMATION CODE */
