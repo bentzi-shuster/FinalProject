@@ -44,13 +44,36 @@
         <textarea style="height: 150px" class="form-control" placeholder="Leave a comment here" id="comment"></textarea>
         <label for="comment">Comments</label>
       </div>
-      <button class="btn btn-outline-secondary mt-4 ml-auto mb-5">Submit</button>
+      <button data-bs-toggle="modal" data-bs-target="#formModal" class="btn btn-outline-secondary mt-4 ml-auto mb-5">Submit</button>
     </div>
 
 
 
 
   </form>
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="formModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Thanks ! We will get back to you soon</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class="img-fluid" src="Images/adam_grading.webp" alt="Beer! cheers">
+        </div>
+        <div class="modal-footer justify-content-between">
+          <p>
+            Have one on the house!
+          </p>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </main>
 
 <script src="Scripts/footer.js"></script>
