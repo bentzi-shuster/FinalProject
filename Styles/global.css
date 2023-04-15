@@ -1,4 +1,17 @@
-/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+ /* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+ @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+ /*custom font*/
+
+ .inspiration{
+     font-family: 'Inspiration', cursive;
+    font-size: 72px;
+ }
+@media only screen and (orientation:portrait ) {
+    .inspiration{
+        font-size: 50px!important;
+    }
+}
+
 #navbar-navElm{
     background-color: #f7ffd9 !important;
     z-index: 1000!important;
@@ -55,3 +68,6 @@ body:active{
     transition: 100s!important;
     background: red!important;
 }
+
+
+
