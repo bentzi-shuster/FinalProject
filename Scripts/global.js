@@ -16,7 +16,7 @@ if(mobileAndTabletCheck()){
 
 
 //PAGE ANIMATION CODE
-window.addEventListener("DOMContentLoaded",(e)=> {
+window.addEventListener("load",(e)=> {
     setTimeout(() => {
         document.body.className += "loaded";
         document.body.style.transition="1s"
