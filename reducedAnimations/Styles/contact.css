@@ -1,0 +1,19 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+#contactForm {
+    background:#e3eddc ;
+    width: 67%;
+}
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries*/
+/*https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+ @media only screen and (orientation:portrait ){
+     #contactForm{
+         --bs-bg-opacity: unset!important;
+         background-color: unset!important;
+         border: none!important;
+         width: 100%!important;
+     }
+     #contactForm div{
+         width: 100%!important;
+     }
+
+}

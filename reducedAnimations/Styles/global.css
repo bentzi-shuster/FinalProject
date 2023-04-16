@@ -1,0 +1,48 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+#navbar-navElm{
+    background-color: #f7ffd9 !important;
+    z-index: 1000!important;
+/*    https://stackoverflow.com/questions/43542922/how-to-avoid-bootstrap-css-overriding-the-custom-css*/
+}
+#header-headerElm{
+    background-color: #E8F2BE!important;
+}
+header{
+    height: 7em;
+}
+*{
+    box-sizing: border-box;
+
+}
+body,html {
+    margin: 0;
+    padding: 0;
+}
+body{
+/*    🍺     */
+    filter: blur(1.15px);
+/*    🍺     */
+}
+/*https://stackoverflow.com/questions/44645465/when-using-height-100vh-for-the-container-vertical-scrollbar-appears*/
+a.logo-link:hover{
+    animation: spin .75s infinite ease-in-out;
+}
+@keyframes spin {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(360deg);
+    }
+
+}
+main{
+    min-height: 60vh;
+}
+.footer{
+    position: sticky;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
+/*    the gradient shows there is stuff below to scroll to*/
+/*    I used https://cssgradient.io/ */
+}

@@ -1,0 +1,15 @@
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
+
+#DrunkGuyImage{
+    width: 90vw;
+}
+/*https://developer.mozilla.org/en-US/docs/Web/CSS/Media_Queries/Using_media_queries*/
+/*https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
+@media only screen and (orientation:landscape ){
+    #DrunkGuyImage{
+        width: 100%;
+        height: auto;
+    }
+
+
+}
