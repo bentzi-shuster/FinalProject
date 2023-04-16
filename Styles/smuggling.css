@@ -37,12 +37,13 @@ body.loaded{
 }
 @keyframes wobble {
     0%{
-        rotate: -10deg;
+        rotate: -25deg;
     }
     50%{
-        rotate: 10deg;
+        rotate: 25deg;
+        padding-bottom: 10px;
     }
     100%{
-        rotate: -10deg;
+        rotate: -25deg;
     }
 }
