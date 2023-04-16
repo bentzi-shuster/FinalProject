@@ -21,23 +21,19 @@
 
 @keyframes cardAnimate {
 0%{
-    transform: rotateZ(0deg);
+    transform: rotateZ(10deg);
 }
-
-20%{
+25%{
     transform: rotate(-10deg);
 }
-    40%{
+    50%{
         transform: rotate(10deg);
     }
-    60%{
+    75%{
         transform: rotate(-10deg);
     }
-80%{
-    transform: rotate(10deg);
-}
     100%{
-        transform: rotate(0deg);
+        transform: rotateZ(10deg);
     }
 }
 /* START OF PAGE ANIMATION CODE */
