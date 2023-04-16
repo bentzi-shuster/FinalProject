@@ -1,4 +1,4 @@
-
+/* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 if(window.location.href.includes("testimonies")) {
     const observer = new window.IntersectionObserver(([entry]) => {
         console.log(entry.boundingClientRect.top)
