@@ -23,3 +23,31 @@ window.addEventListener("DOMContentLoaded",(e)=> {
     }, 10)
 })
 
+
+
+let toastHTML = `
+<div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"><div class="toast-header">
+<img width="36" src="../Images/logo.png" class="rounded me-2" alt="...">
+<strong class="me-auto">Good News</strong>
+<small>just now</small>
+<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+</div>
+<div class="toast-body justify-content-between d-flex">
+We dont use cookies!
+ <button onclick="localStorage.setItem('nocookies', true)" type="button" class="btn btn-primary btn-sm" data-bs-dismiss="toast">Accept</button>
+</div>
+</div>
+
+`
+let wraptoast = document.createElement("div")
+wraptoast.classList.add("toast-container","position-sticky","bottom-0","ms-auto","end-0","p-3")
+wraptoast.innerHTML=toastHTML
+document.body.appendChild(wraptoast)
+
+window.addEventListener("DOMContentLoaded", ()=>{
+    if(!(localStorage.getItem("nocookies"))) {
+        const toastLiveExample = document.getElementById('liveToast')
+        const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastBootstrap.show()
+    }
+})
