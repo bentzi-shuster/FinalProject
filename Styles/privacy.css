@@ -1,11 +1,13 @@
 
 /* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 /* START OF PAGE ANIMATION CODE */
-body {
-    clip-path: circle(0%);
+body{
+
+    transform: skew(90deg, 0deg);
+
 }
 
 body.loaded{
-    clip-path: circle(80%);
+    transform: skew(0deg, 0deg);
 }
 /* END oF PAGE ANIMATION CODE */

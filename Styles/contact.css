@@ -22,14 +22,12 @@
     height: 100%;
 }
 /* START OF PAGE ANIMATION CODE */
-body{
-
-  transform: skew(90deg, 0deg);
-
+body {
+    clip-path: circle(0%);
 }
 
 body.loaded{
-    transform: skew(0deg, 0deg);
+    clip-path: circle(80%);
 }
 /* END oF PAGE ANIMATION CODE */
 
