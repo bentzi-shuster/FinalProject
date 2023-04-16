@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded",(e)=> {
 
 let toastHTML = `
 <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false"><div class="toast-header">
-<img width="36" src="../Images/logo.png" class="rounded me-2" alt="...">
+<img width="36" src="Images/logo.png" class="rounded me-2" alt="...">
 <strong class="me-auto">Good News</strong>
 <small>just now</small>
 <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
