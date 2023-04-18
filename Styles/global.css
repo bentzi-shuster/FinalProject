@@ -5,6 +5,7 @@
  .inspiration{
      font-family: 'Inspiration', cursive;
     font-size: 72px;
+     text-shadow: 5px 5px 1px #e8f2be;
  }
 @media only screen and (orientation:portrait ) {
     .inspiration{
