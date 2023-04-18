@@ -88,7 +88,7 @@ body.loaded{
 }
 div.discolight.one {
     background-color: red;
-    box-shadow: 0 0 1em 1em red;
+    box-shadow: 0 0 5em 10em red;
     top: 50%;
     left: 15%;
     width: 900px;
@@ -97,7 +97,7 @@ div.discolight.one {
 }
 div.discolight.two{
     background: #ff00ff;
-    box-shadow: 0 0 1em 1em #ff00ff;
+    box-shadow: 0 0 5em 10em #ff00ff;
     top: 33%;
     left: 40%;
     width: 500px;
@@ -107,7 +107,7 @@ div.discolight.two{
 div.discolight.three{
     background: lime;
     top: 90%;
-    box-shadow: 0 0 1em 1em lime;
+    box-shadow: 0 0 5em 10em lime;
     left: 65%;
     width: 700px;
     height: 700px;
@@ -116,7 +116,7 @@ div.discolight.three{
 div.discolight.four{
     background: blue;
     top: 50%;
-    box-shadow: 0 0 1em 1em blue;
+    box-shadow: 0 0 5em 10em blue;
     left: 15%;
     width: 200px;
     height: 200px;
@@ -125,7 +125,7 @@ div.discolight.four{
 div.discolight.five{
     background: yellow;
     top: 20%;
-    box-shadow: 0 0 1em 1em yellow;
+    box-shadow: 0 0 5em 10em yellow;
     left: 15%;
     width: 400px;
     height: 400px;
