@@ -30,6 +30,8 @@ document.querySelector(".squirrel").addEventListener("pointerover",(e)=>{
 stoprunning=true
         let conf = confirm("hey... do you by any chance get nauseous very easily? If so you might not want to continue to this part of the site. Press cancel or esc on this popup to stop the effect and press ok or enter if you are brave enough to continue.")
         if(conf){
+            let audio = new Audio('Audio/Party.mp3');
+            audio.play();
             document.body.classList.add("wave")
             document.querySelector(".discoball").style.display="block"
             document.querySelectorAll(".discolight").forEach((elm)=>{
@@ -44,7 +46,7 @@ stoprunning=true
                     elm.style.display=""
                     elm.style.animationPlayState=""
                 })
-            },4000)
+            },36000)
         }
         }
 
