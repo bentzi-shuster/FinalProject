@@ -7,9 +7,15 @@
 /*https://www.w3schools.com/css/css_rwd_mediaqueries.asp*/
 @media only screen and (orientation:landscape ){
     #DrunkGuyImage{
-        width: 100%;
+        width: 50% !important;
         height: auto;
+        margin:auto 0!important;
     }
 
 
+}
+@media only screen and (orientation: portrait){
+    #DrunkGuyImage {
+        margin: 0 !important;
+    }
 }
