@@ -34,7 +34,7 @@ body,html {
 }
 body{
 /*    🍺     */
-    filter: blur(1.15px);
+/*    filter: blur(1.15px);*/
     cursor: url('../Images/beer.cur'), auto!important;
 /*    🍺     */
 }
@@ -359,8 +359,14 @@ main{
     position: sticky;
     bottom: 0;
     background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,1) 15%, rgba(255,255,255,1) 100%);
+    z-index: 100;
+    filter: blur(1.15px);
+    min-height: 10em;
 /*    the gradient shows there is stuff below to scroll to*/
 /*    I used https://cssgradient.io/ */
+}
+iframe{
+height: 50vh!important;
 }
 
 
@@ -368,6 +374,20 @@ main{
  body{
      position: relative;
      display: block;
+ }
+ body.loaded{
+     display: inline;
+ /*    wierd trick to make links in the footer work on load*/
+ }
+ body::before{
+     content: "";
+     width: 100%;
+     height: 100%;
+     z-index: 10000;
+     position: fixed;
+     backdrop-filter: blur(1.15px);
+     pointer-events: none;
+
  }
  body:after {
 
@@ -383,6 +403,7 @@ main{
      left: 0;
      /* TRANSISITION */
      transition: opacity 100s ease-in-out !important;
+     -webkit-transition: opacity 100s ease-in-out!important;
      -webkit-transition: opacity 100s ease-in-out!important;
      -moz-transition: opacity 100s ease-in-out!important;
      -o-transition: opacity 100s ease-in-out!important;

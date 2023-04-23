@@ -53,6 +53,7 @@ function Batman(){
     //nananannananananananananannaannanananana BATMAN!
     let audio = new Audio('Audio/Batman.mp3');
     audio.play();
+    document.body.style.display="block"
     document.body.classList.add("batmanclose")
     document.body.classList.remove("loaded")
     audio.addEventListener("ended",(e)=>{

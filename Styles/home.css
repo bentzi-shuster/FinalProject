@@ -50,7 +50,7 @@ body.loaded{
 
 .drunkBee{
     transition: 1s;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 75px;
@@ -60,7 +60,7 @@ body.loaded{
 }
 .drunkBee2{
     transition: 1s;
-    position: absolute;
+    position: fixed;
     top: 0;
     right: 0;
     width: 75px;

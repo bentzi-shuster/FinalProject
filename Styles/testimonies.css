@@ -12,10 +12,10 @@ body.loaded{
 
 .rat{
     display: none;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 75%;
-    transition: 5s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
-    z-index: -1;
+    transition: 1.75s cubic-bezier(0.33333, 0, 0.66667, 0.33333);
+    z-index: -2;
 width: 100px;
 }

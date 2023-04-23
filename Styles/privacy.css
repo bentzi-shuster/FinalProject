@@ -1,13 +1,13 @@
 
 /* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 /* START OF PAGE ANIMATION CODE */
-body{
-
-    transform: skew(90deg, 0deg);
+body::before{
+backdrop-filter:blur(1.15px)contrast(20000) sepia(20%);
+    transition: 2s;
 
 }
 
-body.loaded{
-    transform: skew(0deg, 0deg);
+body.loaded::before{
+    backdrop-filter:blur(1.15px) contrast(1) sepia(0)!important
 }
 /* END oF PAGE ANIMATION CODE */

@@ -20,7 +20,9 @@ window.addEventListener("load",(e)=> {
     setTimeout(() => {
         document.body.className += "loaded";
         document.body.style.transition="1s"
+        document.body.style.display="block"
     }, 10)
+    setTimeout(()=>{document.body.style.display=""},1000)
 })
 
 
@@ -40,7 +42,7 @@ This site may make you a bit dizzy!
 
 `
 let wraptoast = document.createElement("div")
-wraptoast.classList.add("toast-container","position-sticky","bottom-0","ms-auto","end-0","p-3")
+wraptoast.classList.add("toast-container","position-fixed","bottom-0","ms-auto","end-0","p-3")
 wraptoast.innerHTML=toastHTML
 document.body.appendChild(wraptoast)
 
@@ -48,6 +50,7 @@ window.addEventListener("DOMContentLoaded", ()=>{
     if(!(localStorage.getItem("nocookies"))) {
         const toastLiveExample = document.getElementById('liveToast')
         const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
+        toastBootstrap.show()
         toastBootstrap.show()
     }
 })

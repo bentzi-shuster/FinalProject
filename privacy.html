@@ -13,8 +13,9 @@
     <title>Privacy Statement</title>
     <!--  bootstraps css code  -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <link rel="stylesheet" href="Styles/privacy.css">
     <link rel="stylesheet" href="Styles/global.css">
+    <link rel="stylesheet" href="Styles/privacy.css">
+
     <link rel="shortcut icon" href="Images/logo.png" type="image/x-icon">
 </head>
 <body >
@@ -24,16 +25,25 @@
 <!--this injects the navbar using js, so I can modify it in one file-->
 <main class="container ">
 <h1 class="inspiration text-center my-5">Privacy Policy</h1>
-<object class="w-100 vh-100 p-5 m-2" data="Documents/PrivacyPolicy.pdf"></object>
+<!--<object class="w-100 vh-100 p-5 m-2" data="Documents/PrivacyPolicy.pdf"></object>-->
+    <iframe loading="lazy" class="w-100 p-5 m-2" src="Documents/PrivacyPolicy.pdf"></iframe>
 <!--    https://www.w3schools.com/TAgs/tag_object.asp-->
 </main>
 
 
-<script src="Scripts/footer.js"></script>
+<script src="Scripts/footer.js" async></script>
 <!--this injects the footer using js so I can modify it in one file-->
 
 <!--bootstraps javascript code-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
 <script src="Scripts/global.js"></script>
+<script type="module">
+    import { rainbowCursor  } from "https://unpkg.com/cursor-effects@latest/dist/esm.js";
+
+    new rainbowCursor({
+        length: 25,
+        size: 5,
+    });
+</script>
 </body>
 </html>

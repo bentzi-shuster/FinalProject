@@ -41,7 +41,6 @@ body.loaded{
     }
     50%{
         rotate: 25deg;
-        padding-bottom: 10px;
     }
     100%{
         rotate: -25deg;
@@ -54,31 +53,45 @@ body.loaded{
 }
 @keyframes waveeffect {
     0%{
+
         transform:skew(1deg, 1deg)perspective(100px);
         transform-origin: 100% 50%;
     }
     50%{
+
         transform:skew(1deg, -1deg)perspective(100px);
         transform-origin: -100% -50%;
     }
     100%{
         transform: skew(1deg, 1deg)perspective(100px);
         transform-origin: 100% 50%;
+
     }
 }
 
 .discoball{
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 50%;
     max-width: 50%;
     min-width: 5em;
-    transform: translateX(-50%)translateY(7em)rotate(180deg);
+    transform: translateX(-50%)translateY(-1em)rotate(180deg);
+    animation: discoballspin infinite 2s linear;
     display: none;
 }
-
+@keyframes discoballspin {
+    0%{
+        transform:translateX(-50%)translateY(-1em)rotate(180deg) rotateY(0deg);
+    }
+    50%{
+        transform: translateX(-50%)translateY(-1em)rotate(180deg)rotateY(180deg);
+    }
+    100%{
+        transform:translateX(-50%)translateY(-1em)rotate(180deg) rotateY(360deg);
+    }
+}
 .discolight{
-    position: absolute;
+    position: fixed;
     border-radius: 50%;
     z-index: 100000;
     opacity: .5;
@@ -99,7 +112,7 @@ div.discolight.two{
     background: #ff00ff;
     box-shadow: 0 0 5em 10em #ff00ff;
     top: 33%;
-    left: 40%;
+    left: 70%;
     width: 500px;
     height: 500px;
     animation: drunkFlying 25s infinite linear;
@@ -124,9 +137,9 @@ div.discolight.four{
 }
 div.discolight.five{
     background: yellow;
-    top: 20%;
+    top: 10%;
     box-shadow: 0 0 5em 10em yellow;
-    left: 15%;
+    left: 35%;
     width: 400px;
     height: 400px;
     animation: drunkFlying 40s infinite linear;

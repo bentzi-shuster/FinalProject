@@ -32,12 +32,17 @@
     height: 100%;
 }
 /* START OF PAGE ANIMATION CODE */
-body {
-    clip-path: circle(0%);
+body::before{
+    background-image: url("../Images/adam.png");
+    transition: 1s ease-in-out;
+    background-size: 2000px;
+    back
+    background-position: center;
 }
 
-body.loaded{
-    clip-path: circle(80%);
+body.loaded::before{
+background-size: 0;
+    background-position: center;
 }
 /* END oF PAGE ANIMATION CODE */
 

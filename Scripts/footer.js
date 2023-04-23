@@ -14,4 +14,4 @@ footerWrap.innerHTML=`
   </footer>
 </div>
 `
-document.body.appendChild(footerWrap);
+    document.body.appendChild(footerWrap);

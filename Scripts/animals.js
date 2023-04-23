@@ -1,24 +1,15 @@
 /* DEVELOPER: Benjamin Shuster, IS117-002, Spring 2023 */
 if(window.location.href.includes("testimonies")) {
-    const observer = new window.IntersectionObserver(([entry]) => {
-        console.log(entry.boundingClientRect.top)
-        if (entry.intersectionRatio > .4) {
-            observer.unobserve(entry.target);
+
             document.querySelector(".rat").style.display = "block"
             setTimeout(() => {
                 document.querySelector(".rat").style.top = "calc(100% - 6em)"
+                document.querySelector(".rat").style.zIndex = "1"
             }, 120)
             setTimeout(() => {
                 document.querySelector(".rat").style.display = "none"
             }, 7000)
 
-
-        }
-    }, {
-        root: null,
-        threshold: 0,
-    })
-    observer.observe(document.querySelector("main div p.fallingRatStart"));
 }
 
 
@@ -37,6 +28,8 @@ stoprunning=true
             document.querySelectorAll(".discolight").forEach((elm)=>{
                 elm.style.display="block"
                 elm.style.animationPlayState="playing"
+                document.querySelector("canvas").style.display="none"
+                document.body.style.display="block"
             })
             setTimeout(()=>{
                 document.body.classList.remove("wave");
@@ -45,6 +38,8 @@ stoprunning=true
                 document.querySelectorAll(".discolight").forEach((elm)=>{
                     elm.style.display=""
                     elm.style.animationPlayState=""
+                    document.querySelector("canvas").style.display=""
+                    document.body.style.display=""
                 })
             },36000)
         }
